@@ -20,7 +20,6 @@ function App() {
         const response = await fetch('https://669f704cb132e2c136fdd9a0.mockapi.io/api/v1/retreats');
         const data = await response.json();
 
-        // Apply filters, search, and pagination
         let filteredData = data;
 
         if (filters.date) {
@@ -68,7 +67,7 @@ function App() {
   };
   return (
     <>
-      
+      <div>
       <Head/>
       <Hero />
       <div className='sm:flex m-6 mb-0 sm:flex-col'><Filter onFilterChange={handleFilterChange}/><Search onSearch={handleSearch}/></div>
@@ -77,7 +76,7 @@ function App() {
         totalPages={totalPages}
         onPageChange={handlePageChange}/>
       <Footer/>
-      
+      </div>
     </>
   )
 }
