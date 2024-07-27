@@ -1,5 +1,5 @@
 # Wellness Retreat
-(./wellness.png)
+![](./wellness.png)
 ## Project Setup
 
 1. **Clone the repository:**
